@@ -6,8 +6,7 @@ class ToppingList extends React.Component {
     super();
     this.state = {
       // the default selected topping:
-      selectedTopping: 'cheese',
-      renderCount: 0
+      selectedTopping: 'cheese'
     };
     this.changeSelectedTopping = this.changeSelectedTopping.bind(this);
   }
@@ -18,6 +17,7 @@ class ToppingList extends React.Component {
   }
 
   changeSelectedTopping(topping) {
+    console.log('in changeSelectedTopping');
     this.setState({
       selectedTopping: topping
     });

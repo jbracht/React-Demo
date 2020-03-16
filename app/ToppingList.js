@@ -17,7 +17,6 @@ class ToppingList extends React.Component {
   }
 
   changeSelectedTopping(topping) {
-    console.log('in changeSelectedTopping');
     this.setState({
       selectedTopping: topping
     });
